@@ -19,7 +19,4 @@ interface CharacterDao {
     @Query("DELETE FROM characters WHERE id = :id")
     suspend fun deleteCharacterById(id: Int)
 
-    @Query("DELETE FROM characters")
-    suspend fun deleteAllCharacters()
-
 }
