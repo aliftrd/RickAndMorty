@@ -61,16 +61,16 @@ class SearchViewModelTest {
         val characters = listOf(
             Character(
                 id = 1,
-                name = "Alien Rick",
+                name = "Rick",
                 status = "Alive",
                 species = "Human",
                 type = "",
                 gender = "Male",
-                origin = Origin(name = "Earth", url = ""),
-                location = Location(name = "Earth", url = ""),
+                origin = "Earth",
+                location = "Earth",
                 image = "",
                 episode = emptyList(),
-                url = ""
+                url = "",
             )
         )
         val expectedResult = ApiResponse.Success(characters)
